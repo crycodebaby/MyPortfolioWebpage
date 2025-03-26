@@ -1,19 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyDevPortfolio</title>
+    <title>Robin Schmeiries | Webentwickler-Portfolio</title>
+    <!-- Google Fonts für elegante Typografie -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Font Awesome für Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Globale Stile -->
     <link rel="stylesheet" href="css/global.css">
+    <!-- Seiten-spezifische Stile -->
     <link rel="stylesheet" href="css/landing.css">
-
-
 </head>
 <body>
-    <header>
-
-
+    <!-- Header-Bereich -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/logos/developer-designer-logo.png" alt="Robin Schmeiries - Webentwickler Logo" class="logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#about" class="nav-link">Über mich</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
+    <!-- Hauptinhalt -->
+    <main>
+        <section class="hero">
+            <!-- Canvas für die 3D-Szene -->
+            <canvas id="hero-canvas"></canvas>
+            <!-- Text-Overlay -->
+            <div class="hero__content">
+                <h1>WILLKOMMEN</h1>
+                <p>
+                    Ich bin Robin Schmeiries, ein leidenschaftlicher Hobby-Designer und Full-Stack-Entwickler. Mit Erfahrung in der Entwicklung von Online-Präsenzen für Kunden und einem Talent für kreative Problemlösungen, bin ich stets bereit, Neues zu lernen und Herausforderungen anzunehmen. Ich suche ein Umfeld, in dem ich wachsen und durch praxisnahe Einblicke in die Tech-Branche meine Fähigkeiten erweitern kann.
+                </p>
+                <a href="#contact" class="btn btn--primary">Kontaktiere mich</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer-Bereich -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Logo-Bereich -->
+            <div class="footer__logo">
+                <img src="images/logos/developer-designer-logo.png" alt="Robin Schmeiries - Webentwickler Logo" class="logo">
+            </div>
+            <!-- Links und Informationen -->
+            <div class="footer__links">
+                <h3>Links</h3>
+                <ul class="footer__list">
+                    <li><a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://codepen.io" target="_blank" rel="noopener noreferrer"><i class="fab fa-codepen"></i> CodePen</a></li>
+                    <li><a href="#datenschutz">Datenschutzerklärung (DSGVO)</a></li>
+                </ul>
+            </div>
+            <div class="footer__info">
+                <h3>Kontakt</h3>
+                <p>Email: <a href="mailto:robin.schmeiries@gmx.de">robin.schmeiries@gmx.de</a></p>
+                <p>Telefon: 01605539220</p>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>© 2025 Robin Schmeiries. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- Globale JavaScript-Datei -->
+    <script src="js/global.js"></script>
+    <!-- Seiten-spezifische JavaScript-Datei -->
+    <script src="js/landing.js"></script>
 </body>
 </html>
